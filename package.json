@@ -8,7 +8,7 @@
   "scripts": {
     "preinstall": "node check-node-version.js",
     "build": "lerna run --stream build",
-    "convert": "node ./clis/glft-avatar-exporter/build/index.js",
+    "convert": "node ./clis/gltf-avatar-exporter/build/index.js",
     "clean-animation": "node ./clis/animation-cleaner/build/index.js",
     "draco-encode": "node ./clis/draco-encoder/build/index.js",
     "iterate": "npm run build && lerna run --parallel --stream iterate",
