@@ -1,4 +1,5 @@
 import { Canvas, Image, loadImage } from "@napi-rs/canvas";
+import { PolyfillImageClass } from "./PolyfillImageClass";
 import Jimp from "jimp";
 
 import { PolyfillBlobClass } from "./PolyfillBlobClass";
@@ -123,7 +124,8 @@ export function setupPolyfills(globalAsAny: any) {
     createElementNS,
     createElement,
   };
-  globalAsAny.HTMLImageElement = Image;
+  globalAsAny.Image = PolyfillImageClass;
+  globalAsAny.HTMLImageElement = PolyfillImageClass;
   globalAsAny.HTMLCanvasElement = Canvas;
   globalAsAny.FileReader = PolyfillFileReader;
   globalAsAny.Blob = PolyfillBlobClass;
