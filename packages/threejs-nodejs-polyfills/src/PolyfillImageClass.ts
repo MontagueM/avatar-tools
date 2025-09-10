@@ -1,6 +1,6 @@
 import { loadImage, Image as NapiImage } from "@napi-rs/canvas";
-import { PolyfillBlobClass } from "./PolyfillBlobClass";
 
+import { PolyfillBlobClass } from "./PolyfillBlobClass";
 /**
  * Minimal Image polyfill for Node that supports:
  * - assigning data: URLs to `src` (used by GLTFLoader WebP/AVIF detection)
@@ -114,5 +114,4 @@ export class PolyfillImageClass {
     }
   }
 }
-
 

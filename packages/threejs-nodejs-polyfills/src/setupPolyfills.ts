@@ -1,9 +1,9 @@
 import { Canvas, Image, loadImage } from "@napi-rs/canvas";
-import { PolyfillImageClass } from "./PolyfillImageClass";
 import Jimp from "jimp";
 
 import { PolyfillBlobClass } from "./PolyfillBlobClass";
 import { PolyfillFileReader } from "./PolyfillFileReader";
+import { PolyfillImageClass } from "./PolyfillImageClass";
 import { PolyfillImageDataClass } from "./PolyfillImageDataClass";
 import { PolyfillURLClass } from "./PolyfillURLClass";
 
